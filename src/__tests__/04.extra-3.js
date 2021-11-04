@@ -2,8 +2,8 @@ import * as React from 'react'
 import {alfredTip} from '@kentcdodds/react-workshop-app/test-utils'
 import {render, screen} from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import App from '../final/04.extra-3'
-// import App from '../exercise/04'
+// import App from '../final/04.extra-3'
+import App from '../exercise/04.extra-3'
 
 test('can play a game of tic tac toe', () => {
   render(<App />)
@@ -93,4 +93,11 @@ test('can play a game of tic tac toe', () => {
       ),
     'Make sure that the localStorage item is updated with the JSON.stringified squares array',
   )
+
+  userEvent.click(s1)
+  expect(screen.queryAllByRole('listitem').length).toBe(2)
+  userEvent.click(gameStart)
+  userEvent.click(s2)
+  expect(screen.queryAllByRole('listitem').length).toBe(2)
+  expect(s1).toHaveTextContent('')
 })
