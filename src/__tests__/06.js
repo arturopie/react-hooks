@@ -4,7 +4,8 @@ import {render, screen} from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 // import App from '../final/06'
 // import App from '../exercise/06'
-import App from '../exercise/06.extra-1'
+// import App from '../exercise/06.extra-1'
+import App from '../exercise/06.extra-2'
 
 beforeEach(() => jest.spyOn(window, 'fetch'))
 afterEach(() => window.fetch.mockRestore())
