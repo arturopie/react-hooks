@@ -6,7 +6,8 @@ import userEvent from '@testing-library/user-event'
 // import App from '../exercise/06'
 // import App from '../exercise/06.extra-1'
 // import App from '../exercise/06.extra-2'
-import App from '../exercise/06.extra-3'
+// import App from '../exercise/06.extra-3'
+import App from '../exercise/06.extra-4'
 
 beforeEach(() => jest.spyOn(window, 'fetch'))
 afterEach(() => window.fetch.mockRestore())
